@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/header';
+import Footer from './components/footer';
+import Skills from './components/skills'
+import ImageGallery from './components/imagegallery';
+import skillsData from './data/skillsdata';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <div>
+      <Header />
+      </div>
+      <div>
+      {skillsData.map((data) => (
+          <Skills  key={data.id} image = {data.image} title = {data.title}></Skills>
+        ))}
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

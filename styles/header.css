@@ -1,0 +1,240 @@
+.header {
+  color: rgb(0, 0, 0);
+  padding: 1rem 0;
+  font-family: "Comfortaa";
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+.image-container {
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  z-index: -1;
+  object-fit: cover;
+  margin-top: -3rem;
+  left: 53.96%;
+}
+
+.yellow-bg-image {
+  width: 100%;
+  height: 100%;
+}
+.flex-container {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.profession-text {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.profession-div {
+  margin-bottom: 1rem;
+  width: 40%;
+  padding-left: 9.5rem;
+  padding-top: 1rem;
+}
+.profession-div > h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+.description {
+  color: #828282;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #828282;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.profession-text {
+  width: 486px;
+  height: 27px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fdc435;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.project-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 26px;
+  width: 100px;
+  height: 38px;
+  background: #fdc435;
+  border-radius: 8px;
+  font-family: "Roboto";
+  align-items: center;
+  font-weight: 500;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+  cursor: pointer;
+}
+.button-flex {
+  display: inline-flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.project-linkedin {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 26px;
+  width: 100px;
+  height: 38px;
+  border: 2px solid #25282b;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "Roboto";
+  align-items: center;
+  font-weight: 500;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+  cursor: pointer;
+}
+.profession-h1 {
+width: 486px;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+color: #25282B;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+@media (max-width: 640px) {
+  /* Image Container Adjustments */
+  .image-container {
+    max-width: 100%;
+    height: auto;
+    left: -0.1rem; /* Align to the left */
+    top: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Profession Section Adjustments */
+  .profession-div {
+    max-width: 100%; /* Increase width for better readability */
+    margin-top: 10rem; /* Adjust margin for better spacing */
+    position: relative;
+    right: 10%; /* Align to the center */
+    margin-right: 60%;
+    text-align: center; /* Center text */
+  }
+
+  .profession-div > h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem; /* Adjust font size */
+    width: 100%;
+  }
+  
+  .description {
+    font-size: 0.8rem; /* Adjust font size for description */
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .profession-text {
+    position: relative;
+    margin-left: -5%; /* Align to the center */
+    margin-top: 100%;
+    font-size: 1rem; /* Adjust font size for profession text */
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .button-flex {
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center; 
+  }
+
+  .project-button, .project-linkedin {
+    width: 100%; 
+  }
+  .header-title {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .header-nav ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    margin: 0;
+    bottom: 1.3rem;
+  }
+  
+  .header-nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
