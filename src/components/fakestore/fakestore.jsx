@@ -13,7 +13,7 @@ function NavBar() {
     }
   }, []);
   
-console.log(items);
+console.log(items); //changes
   return (
 <div className={styles.mainDiv}>
     <h1>Fake Store</h1>
@@ -23,7 +23,7 @@ console.log(items);
             <li><a href="/fakestoreproducts">Products</a></li>
             <li><a href="/fakestorecart">Cart</a></li>
             <li><a href="/aboutus">Contact Us</a></li>
-            <li><a href="/fakestorelogin">Login</a></li>
+            <li><a href="/fakestorelogin">Login</a></li> 
         </ul>
     </div>
 </div>
