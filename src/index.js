@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './components/portfolio/home';
 import FakeStore from './components/fakestore/fakestore';
 import ProductFakeStore from "./components/fakestore/products";
+import Login from './components/fakestore/login';
+import Cart from "./components/fakestore/cart"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <ProductFakeStore />, 
+  },
+  {
+    path: "/login",
+    element: <Login />, 
+  },
+  {
+    path: "/cart",
+    element: <Cart />, 
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

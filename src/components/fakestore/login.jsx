@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/login.css";
+import "../fakestore/fakestorestyles/login.css";
 import { useNavigate } from 'react-router-dom';
 import { useState,  useEffect } from "react";
 
