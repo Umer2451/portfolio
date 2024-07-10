@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../fakestore/fakestorestyles/slider.css"
+import styles from "../fakestore/fakestorestyles/slider.module.css"
 import images1 from "../../images/image1.png";
 import images2 from  "../../images/image2.png";
 import images3 from  "../../images/image3.png";
@@ -16,9 +16,9 @@ function Slider() {
   }, []);
 
   return (
-    <div className="slider">
+    <div className={styles.slider}>
       <div
-        className="slider-content"
+        className={styles.slidercontent}
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
@@ -26,7 +26,7 @@ function Slider() {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className="slider-image"
+            className= {styles.sliderimage}
           />
         ))}
       </div>

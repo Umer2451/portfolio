@@ -1,84 +1,138 @@
-
+/* Container styling */
 .card {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   padding: 30px;
-  flex-wrap: wrap; 
-  margin: auto; 
+  flex-wrap: wrap;
+  margin: auto;
   max-width: 1200px;
 }
 
+/* Card styling */
 .card > div {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  width: 32%; 
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  overflow: hidden; 
-  transition: transform 0.3s; 
+  overflow: hidden;
+  transition: transform 0.3s;
   height: 80vh;
 }
 
+/* Specific card background colors */
 .cardone {
   background-color: #16a1c4;
 }
+
 .cardtwo {
   background-color: #32bede;
 }
+
 .cardthree {
   background-color: #53d0ea;
 }
 
-
+/* Card hover effect */
 .card > div:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
-.imageclass{
+/* Image styling */
+.imageclass {
   width: 100%;
   height: 80vh;
   object-fit: cover;
-  transition: opacity 0.3s, transform 0.3s; 
+  transition: opacity 0.3s, transform 0.3s;
 }
+
 .imageclass2 {
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  transition: opacity 0.3s, transform 0.3s; 
+  transition: opacity 0.3s, transform 0.3s;
 }
 
+/* Image hover effect */
 .imageclass:hover {
   opacity: 0.8;
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
+/* Button container styling */
 .buttonflex {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
-  padding: 1rem; 
-  background: rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Button styling */
-.buttonflex  {
-  width: 80%; 
+.buttonflex button {
+  width: 80%;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   background-color: #1e97ff;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; 
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 /* Button hover effect */
-.buttonflex > button:hover {
+.buttonflex button:hover {
   background-color: #0676ff;
-  transform: scale(1.05); 
+  transform: scale(1.05);
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .card > div {
+    width: 48%;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card > div {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .imageclass {
+    height: 60vh;
+  }
+
+  .imageclass2 {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 10px;
+  }
+
+  .card > div {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .imageclass {
+    height: 40vh;
+  }
+
+  .imageclass2 {
+    height: 40vh;
+  }
+
+  .buttonflex button {
+    width: 90%;
+  }
 }

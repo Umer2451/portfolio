@@ -23,7 +23,7 @@ const skillsData = [{
 {
     "id": 3,
     "image": css,
-    "title": "CSS"
+    "title": "Advance CSS & Tailwind"
 },
 {
     "id": 4,
