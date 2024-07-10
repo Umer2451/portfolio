@@ -41,4 +41,8 @@
     transform: translateY(-4px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
-  
+  @media (max-width: 640px) {
+    .main-div {            
+      padding: 12px;            
+    }
+  }
