@@ -116,7 +116,7 @@
   border: none;
   cursor: pointer;
 }
-.button-flex {
+.button-flex-portfolio {
   display: inline-flex;
   justify-content: space-evenly;
   gap: 20px;
@@ -198,7 +198,7 @@ flex-grow: 0;
     padding: 10px;
   }
 
-  .button-flex {
+  .button-flex-portfolio {
     flex-direction: column; 
     gap: 10px; 
     align-items: center; 

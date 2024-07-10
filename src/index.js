@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from './components/portfolio/home';
+import FakeStore from './components/fakestore/fakestore';
+import ProductFakeStore from "./components/fakestore/products";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />, 
+  },
+  {
+    path: "/portfolio",
+    element: <Home />, 
+  },
+  {
+    path: "/fakestore",
+    element: <FakeStore />, 
+  },
+  {
+    path: "/products",
+    element: <ProductFakeStore />, 
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+   <React.StrictMode>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

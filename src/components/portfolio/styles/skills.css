@@ -21,7 +21,7 @@
   overflow: hidden;
 }        
   .main-div img {
-    width: 150px;                
+    width: 200px;                
     height: auto;               
     object-fit: cover;          
     border-radius: 20px;          

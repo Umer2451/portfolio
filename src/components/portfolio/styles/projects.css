@@ -1,0 +1,49 @@
+
+.main-div-projects{
+  display: inline-flex;        
+  flex-direction: row;       
+  flex-wrap: wrap;            
+  border: 1px solid #ccc;     
+  border-radius: 8px;         
+  font-family: "Poppins", sans-serif; 
+  width: 300px;            
+  height: 200px;               
+  padding: 22px;            
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;     
+  margin: 16px;                
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mmain-div-projects {
+  flex: 1 1 300px;             
+  max-width: 300px;           
+  max-height: 200px;   
+  overflow: hidden;
+}        
+  .main-div-projects img {
+    width: 150px;                
+    height: auto;               
+    object-fit: cover;          
+    border-radius: 20px;          
+    margin-right: 16px;          
+  }
+
+  .main-div-projects p {
+    display: flex;
+    align-items: center;        
+    flex: 1;                     
+    font-size: 14px;             
+    color: #333;                 
+    margin: 0;                   
+  }
+  
+  .main-div-projects:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  @media (max-width: 640px) {
+    .main-div-projects {            
+      padding: 12px;            
+    }
+  }

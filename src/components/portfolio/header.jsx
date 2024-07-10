@@ -1,8 +1,15 @@
 import React from "react";
-import "../styles/header.css";
-import image from "../images/image.png";
+import "../portfolio/styles/header.css";
+import image from "../../images/image.png";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
+
+    function navigateToFakeStore(event) {
+        event.preventDefault(); 
+        navigate('/fakestore'); 
+    }
   const professions = [
     { id: 1, title: "Software Engineer" },
     { id: 2, title: "Frontend Developer" },
@@ -57,8 +64,8 @@ const Header = () => {
           <p className="description">
             Results-driven React Developer with 2.5 years of experience in designing and implementing user interfaces for web applications. Skilled in JavaScript, React.js, and modern web development practices. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
           </p>
-          <div className="button-flex">
-          <button className="project-button">Projects</button>
+          <div className="button-flex-portfolio">
+          <button onClick = {navigateToFakeStore}className="project-button">Projects</button>
           <button className="project-linkedin">LinkedIn</button>
           </div>
         </div>

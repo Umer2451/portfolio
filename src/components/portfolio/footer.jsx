@@ -1,8 +1,8 @@
 import React from 'react';
-import email from '../images/email.png';
-import linkedin from '../images/linkedin.png';
-import vector from '../images/Vector.png';
-import '../styles/footer.css';
+import email from '../../images/email.png';
+import linkedin from '../../images/linkedin.png';
+import vector from '../../images/Vector.png';
+import '../portfolio/styles/footer.css';
 
 function Footer() {
     return (
