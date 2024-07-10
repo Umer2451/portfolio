@@ -2,14 +2,8 @@ import React from "react";
 import "../portfolio/styles/header.css";
 import image from "../../images/image.png";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-const Header = () => {
-  const navigate = useNavigate();
 
-    function navigateToFakeStore(event) {
-        event.preventDefault(); 
-        navigate('/fakestore'); 
-    }
+const Header = ({ projectsRef }) => {
   const professions = [
     { id: 1, title: "Software Engineer" },
     { id: 2, title: "Frontend Developer" },
@@ -31,6 +25,11 @@ const Header = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -50,7 +49,7 @@ const Header = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a onClick={scrollToProjects} href="#projects">Projects</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -65,7 +64,7 @@ const Header = () => {
             Results-driven React Developer with 2.5 years of experience in designing and implementing user interfaces for web applications. Skilled in JavaScript, React.js, and modern web development practices. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
           </p>
           <div className="button-flex-portfolio">
-          <button onClick = {navigateToFakeStore}className="project-button">Projects</button>
+          <button onClick={scrollToProjects} className="project-button">Projects</button>
           <button className="project-linkedin">LinkedIn</button>
           </div>
         </div>
