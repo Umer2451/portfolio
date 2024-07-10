@@ -66,7 +66,7 @@ const skillsData = [{
     "title": "Python"
 },
 {
-    "id": 11,
+    "id": 12,
     "image": unity,
     "title": "Unity"
 }]

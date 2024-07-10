@@ -47,4 +47,7 @@
     .main-div {            
       padding: 12px;            
     }
+    .main-div img {
+      bottom: 0.2rem;
+    }
   }
