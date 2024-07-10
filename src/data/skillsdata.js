@@ -13,12 +13,12 @@ import unity from "../images/unity.png"
 const skillsData = [{
     "id": 1,
     "image":react,
-    "title": "React JS"
-},
+    "title": "React JS, hooks states and components"
+}, 
 {
     "id": 2,
     "image": html,
-    "title": "HTML"
+    "title": "HTML DOM Manipulation & More"
 },
 {
     "id": 3,
@@ -28,17 +28,17 @@ const skillsData = [{
 {
     "id": 4,
     "image": git,
-    "title": "Git"
+    "title": "Git CLI as well as desktop"
 },
 {
     "id": 5,
     "image":kony,
-    "title": "Kony / Infinity"
+    "title": "Kony / Infinity can create cross platform application using MVC Architecture"
 },
 {
     "id": 6,
     "image": redux,
-    "title": "Redux"
+    "title": "Redux State Management"
 },
 {
     "id": 7,

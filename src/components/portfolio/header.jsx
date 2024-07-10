@@ -46,13 +46,13 @@ const Header = ({ projectsRef }) => {
           </div>
           <ul>
             <li>
-              <a href="#about">About</a>
+            <a onClick={scrollToProjects} href="#projects">Projects</a>
             </li>
             <li>
-              <a onClick={scrollToProjects} href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+            <a href="#about">About</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +65,7 @@ const Header = ({ projectsRef }) => {
           </p>
           <div className="button-flex-portfolio">
           <button onClick={scrollToProjects} className="project-button">Projects</button>
-          <button className="project-linkedin">LinkedIn</button>
+          <button   onClick={() => window.location.href = 'https://www.linkedin.com/in/umernaeem2451/'} className="project-linkedin">LinkedIn</button>
           </div>
         </div>
     </header>
