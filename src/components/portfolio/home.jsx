@@ -11,14 +11,15 @@ function Home() {
       <Header />
       </div>
       <div>
-      {skillsData.map((data) => (
-          <Skills  key={data.id} image = {data.image} title = {data.title}></Skills>
-        ))}
-      </div>
-      <div>
-      <div style = {{display: "flex"}}><h1>Projects</h1></div>
+      <div style = {{display: "flex", width: "100%", justifyContent: "center", borderBottom: "10px solid #FDC435", fontFamily: "Nunito"}}><h1> My Projects</h1></div>
       {projectData.map((data) => (
           <Projects  key={data.id} image = {data.image} title = {data.title} function = {data.p}></Projects>
+        ))}
+      </div>
+      <div style = {{display: "flex", maxWidth: "100%", justifyContent: "center", borderBottom: "10px solid #FDC435", fontFamily: "Nunito"}}><h1> My Skills</h1></div>
+      <div>
+      {skillsData.map((data) => (
+          <Skills  key={data.id} image = {data.image} title = {data.title}></Skills>
         ))}
       </div>
       <div>
