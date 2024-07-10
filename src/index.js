@@ -22,15 +22,15 @@ const router = createBrowserRouter([
     element: <FakeStore />, 
   },
   {
-    path: "/products",
+    path: "/fakestoreproducts",
     element: <ProductFakeStore />, 
   },
   {
-    path: "/login",
+    path: "/fakestorelogin",
     element: <Login />, 
   },
   {
-    path: "/cart",
+    path: "/fakestorecart",
     element: <Cart />, 
   }
 ]);

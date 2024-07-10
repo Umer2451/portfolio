@@ -20,10 +20,10 @@ console.log(items);
     <div className={styles.coollist}>
         <ul>
         <li><a href="/fakestore">Home</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/cart">Cart</a></li>
+            <li><a href="/fakestoreproducts">Products</a></li>
+            <li><a href="/fakestorecart">Cart</a></li>
             <li><a href="/aboutus">Contact Us</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><a href="/fakestorelogin">Login</a></li>
         </ul>
     </div>
 </div>
