@@ -46,6 +46,8 @@
   }
   @media (max-width: 640px) {
     .main-div-projects {            
-      padding: 12px;            
+      padding: 12px;  
+      width: 300px;   
+      margin: 16px;         
     }
   }
