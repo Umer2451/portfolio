@@ -1,5 +1,5 @@
 import store from "../images/store.png";
-import finanApp from "../images/finanApp.png"
+import finanApp from "../images/FinanApp.png"
 import css from "../images/css.png"
 const projectData = [{
     "id": 1,
@@ -11,7 +11,7 @@ const projectData = [{
     "id": 2,
     "image": finanApp,
     "title": "Finan App (Made with Redux, React and Firestore)",
-    "p": "/finance-app/"
+    "p": "https://Umer2451.github.io/finance-app/",
 },
 {
     "id": 3,
