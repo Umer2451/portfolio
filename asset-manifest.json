@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.afedfdc2.css",
-    "main.js": "/static/js/main.2c09f7f7.js",
+    "main.js": "/static/js/main.22ee7103.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/image3.png": "/static/media/image3.3f0cf009082fc3ae7981.png",
     "static/media/lotion.jpg": "/static/media/lotion.ebd40bdbed906d8fdf00.jpg",
@@ -15,15 +15,14 @@
     "static/media/expressjs.png": "/static/media/expressjs.fe1eec364f69de4ba3f1.png",
     "static/media/redux.png": "/static/media/redux.4e01296bafaaea1aa902.png",
     "static/media/kony.png": "/static/media/kony.2ba674f166e3a5d788db.png",
-    "static/media/FinanApp.png": "/static/media/FinanApp.030a816e621476aec89d.png",
     "static/media/node.png": "/static/media/node.a944ef19fe84ba7371f2.png",
     "index.html": "/index.html",
     "main.afedfdc2.css.map": "/static/css/main.afedfdc2.css.map",
-    "main.2c09f7f7.js.map": "/static/js/main.2c09f7f7.js.map",
+    "main.22ee7103.js.map": "/static/js/main.22ee7103.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afedfdc2.css",
-    "static/js/main.2c09f7f7.js"
+    "static/js/main.22ee7103.js"
   ]
 }
