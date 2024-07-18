@@ -61,7 +61,7 @@ const Header = ({ projectsRef }) => {
           <p className="profession-text">{professions[currentProfessionIndex].title}</p>
           <h1 className="profession-h1">Hello, I am Syed Umer Naeem</h1>
           <p className="description">
-            Results-driven React Developer with 2.5 years of experience in designing and implementing user interfaces for web applications. Skilled in JavaScript, React.js, and modern web development practices. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
+            Results-driven React Developer with over 3 years of experience in designing and implementing user interfaces for web applications. Skilled in JavaScript, React.js, and modern web development practices. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
           </p>
           <div className="button-flex-portfolio">
           <button onClick={scrollToProjects} className="project-button">Projects</button>

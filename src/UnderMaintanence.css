@@ -1,0 +1,38 @@
+/* UnderMaintenance.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #f0f0f0; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .maintenance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #fff; /* White background for the message box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .maintenance-heading {
+    font-size: 2.5rem;
+    color: #333; /* Dark grey color for the text */
+    margin: 0;
+  }
+  
+  .maintenance-message {
+    font-size: 1.2rem;
+    color: #666; /* Medium grey color for the message */
+    margin-top: 10px;
+  }
+  

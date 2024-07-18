@@ -8,30 +8,33 @@ import FakeStore from './components/fakestore/fakestore';
 import ProductFakeStore from "./components/fakestore/products";
 import Login from './components/fakestore/login';
 import Cart from "./components/fakestore/cart"
+import App from './App';
+import NewHome from './components/portfolio/newhome';
+import UnderMaintenance from './components/Maintanence';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />, 
+    element: <UnderMaintenance />, 
   },
   {
-    path: "/portfolio",
-    element: <Home />, 
+    path: "/App",
+    element: <UnderMaintenance />, 
   },
   {
     path: "/fakestore",
-    element: <FakeStore />, 
+    element: <UnderMaintenance />, 
   },
   {
     path: "/fakestoreproducts",
-    element: <ProductFakeStore />, 
+    element: <UnderMaintenance />, 
   },
   {
     path: "/fakestorelogin",
-    element: <Login />, 
+    element: <UnderMaintenance />, 
   },
   {
     path: "/fakestorecart",
-    element: <Cart />, 
+    element: <UnderMaintenance />, 
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

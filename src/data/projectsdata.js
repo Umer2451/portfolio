@@ -1,17 +1,12 @@
 import store from "../images/store.png";
 import finanApp from "../images/MoneyMaps.png"
 import css from "../images/css.png"
-const projectData = [{
-    "id": 1,
-    "image":store,
-    "title": "My Fake Store (Made just with redux",
-    "p": "/fakestore"
-},
+const projectData = [
 {
     "id": 2,
     "image": finanApp,
     "title": "Map Money (Made with Redux, React and Firestore)",
-    "p": "https://Umer2451.github.io/finance-app/",
+    "p": "https://umer2451.github.io/moneyapp/",
 },
 {
     "id": 3,

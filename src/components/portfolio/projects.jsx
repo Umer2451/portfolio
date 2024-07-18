@@ -5,7 +5,7 @@ function Projects(props) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    if (props.function === "https://Umer2451.github.io/finance-app/") {
+    if (props.function === "https://umer2451.github.io/moneyapp/") {
       window.open(props.function, "_blank", "noopener noreferrer");
     } else {
       navigate(props.function);
